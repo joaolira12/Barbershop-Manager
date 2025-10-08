@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{621BA4FA-8DE3-441F-BDCE-A9D6AE1B646D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.API", "src\BarberShopManager.API\BarberShopManager.API.csproj", "{7B6F4C0D-5545-4F56-B9ED-A12DD13AF88F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Application", "src\BarberShopManager.Application\BarberShopManager.Application.csproj", "{BBE36108-0D0A-4628-81C6-36E4B42991E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Communication", "src\BarberShopManager.Communication\BarberShopManager.Communication.csproj", "{C6E8D302-30CB-4876-B03C-3D33085A373F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Exceptions", "src\BarberShopManager.Exceptions\BarberShopManager.Exceptions.csproj", "{FDDD6BB2-C477-4596-B614-4BD5FC15615C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Domain", "src\BarberShopManager.Domain\BarberShopManager.Domain.csproj", "{6D202CB1-8534-48AA-88AA-3348BF8C44F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Infrastructure", "src\BarberShopManager.Infrastructure\BarberShopManager.Infrastructure.csproj", "{CFB6D811-97AF-4A38-9728-F6332147B183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6F4C0D-5545-4F56-B9ED-A12DD13AF88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6F4C0D-5545-4F56-B9ED-A12DD13AF88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6F4C0D-5545-4F56-B9ED-A12DD13AF88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6F4C0D-5545-4F56-B9ED-A12DD13AF88F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE36108-0D0A-4628-81C6-36E4B42991E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE36108-0D0A-4628-81C6-36E4B42991E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE36108-0D0A-4628-81C6-36E4B42991E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE36108-0D0A-4628-81C6-36E4B42991E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E8D302-30CB-4876-B03C-3D33085A373F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E8D302-30CB-4876-B03C-3D33085A373F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E8D302-30CB-4876-B03C-3D33085A373F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E8D302-30CB-4876-B03C-3D33085A373F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDD6BB2-C477-4596-B614-4BD5FC15615C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDD6BB2-C477-4596-B614-4BD5FC15615C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDD6BB2-C477-4596-B614-4BD5FC15615C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDD6BB2-C477-4596-B614-4BD5FC15615C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D202CB1-8534-48AA-88AA-3348BF8C44F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D202CB1-8534-48AA-88AA-3348BF8C44F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D202CB1-8534-48AA-88AA-3348BF8C44F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D202CB1-8534-48AA-88AA-3348BF8C44F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB6D811-97AF-4A38-9728-F6332147B183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB6D811-97AF-4A38-9728-F6332147B183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB6D811-97AF-4A38-9728-F6332147B183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB6D811-97AF-4A38-9728-F6332147B183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B6F4C0D-5545-4F56-B9ED-A12DD13AF88F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BBE36108-0D0A-4628-81C6-36E4B42991E2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C6E8D302-30CB-4876-B03C-3D33085A373F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FDDD6BB2-C477-4596-B614-4BD5FC15615C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6D202CB1-8534-48AA-88AA-3348BF8C44F2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{CFB6D811-97AF-4A38-9728-F6332147B183} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DEA5E2D-3149-4C2B-AE25-A83C776E21AD}
+	EndGlobalSection
+EndGlobal

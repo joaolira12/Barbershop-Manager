@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BarberShopManager.Application\BarberShopManager.Application.csproj" />
+    <ProjectReference Include="..\BarberShopManager.Communication\BarberShopManager.Communication.csproj" />
+    <ProjectReference Include="..\BarberShopManager.Exceptions\BarberShopManager.Exceptions.csproj" />
+    <ProjectReference Include="..\BarberShopManager.Infrastructure\BarberShopManager.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
