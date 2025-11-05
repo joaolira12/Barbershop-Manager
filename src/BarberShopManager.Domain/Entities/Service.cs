@@ -9,16 +9,13 @@ public class Service
     public DateTime Date { get; set; }
     public string Observation {  get; set; } = string.Empty;
     public int ClientId { get; set; }
-    //public Client Client { get; set; }
 
-    public Service(int id, ServiceType serviceType, double value, DateTime date, string observation, int clientId/*, Client client*/)
+    public Service(ServiceType serviceType, double value, DateTime date, string observation, int clientId)
     {
-        Id = id;
         ServiceType = serviceType;
         Value = value;
         Date = date;
         Observation = observation;
         ClientId = clientId;
-        /*Client = client;*/
     }
 }

@@ -18,4 +18,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\Services\GetByWeek\" />
+  </ItemGroup>
+
 </Project>

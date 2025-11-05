@@ -8,15 +8,13 @@ public class ResponseServiceJson
     public double Value { get; set; }
     public DateTime Date { get; set; }
     public string Observation {  get; set; } = string.Empty;
-    public string CientName { get; set; } = string.Empty;
 
-    public ResponseServiceJson(int id, ServiceType serviceType, double value, DateTime date, string observation, string cientName)
+    public ResponseServiceJson(int id, ServiceType serviceType, double value, DateTime date, string observation)
     {
         Id = id;
         ServiceType = serviceType;
         Value = value;
         Date = date;
         Observation = observation;
-        CientName = cientName;
     }
 }

@@ -25,7 +25,8 @@ public class RegisterServiceUseCase : IRegisterServiceUseCase
     {
         Validate(request);
 
-        Service service = _mapper.Map<Service>(request);
+        //Não foi possível fazer o mapeamento pelo automapping por serem dois enums de projetos diferentes
+        Service service = new Service((Domain.Entities.Enums.ServiceType)request.ServiceType, request.Value, request.Date, request.Observation, request.ClientId);
 
         await _repository.CreateService(service);
         await _unitOfWork.Commit();
