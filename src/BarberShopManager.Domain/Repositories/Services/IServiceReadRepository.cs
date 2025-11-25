@@ -5,6 +5,6 @@ public interface IServiceReadRepository
 {
     public Task<Service> GetServiceById(int id);
     public Task<List<Service>> FilterByMonth(DateOnly date);
-    public Task<List<Service>> FilterByWeek(DateOnly date);
+    public Task<List<Service>> FilterLastWeek(DateOnly dateStart, DateOnly dateEnd);
     public Task<List<Service>> FilterByClient(int clientId);
 }

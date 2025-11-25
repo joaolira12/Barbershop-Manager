@@ -10,6 +10,10 @@ public class RequestServiceJson
     public string Observation {  get; set; } = string.Empty;
     public int ClientId { get; set; }
 
+    public RequestServiceJson()
+    {
+    }
+
     public RequestServiceJson(ServiceType serviceType, double value, DateTime date, string observation, int clientId)
     {
         ServiceType = serviceType;

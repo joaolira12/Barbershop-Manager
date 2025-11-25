@@ -117,28 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CLIENT_NOT_FOUND" xml:space="preserve">
-    <value>Cliente não encontrado!</value>
+  <data name="CLIENT" xml:space="preserve">
+    <value>Cliente</value>
   </data>
-  <data name="INVALID_SERVICE_TYPE" xml:space="preserve">
-    <value>Tipo de serviço inválido!</value>
+  <data name="DATE" xml:space="preserve">
+    <value>Data</value>
   </data>
-  <data name="INVALID_TELEPHONE_NUMBER" xml:space="preserve">
-    <value>Número de telefone inválido!</value>
+  <data name="OBSERVATION" xml:space="preserve">
+    <value>Observação</value>
   </data>
-  <data name="NAME_REQUIRED" xml:space="preserve">
-    <value>Nome obrigatório!</value>
+  <data name="SERVICE" xml:space="preserve">
+    <value>Serviço</value>
   </data>
-  <data name="SERVICE_CANNOT_FUTURE" xml:space="preserve">
-    <value>O serviço não pode estar no futuro!</value>
+  <data name="SERVICES_FROM" xml:space="preserve">
+    <value>Serviços de</value>
   </data>
-  <data name="SERVICE_NOT_FOUND" xml:space="preserve">
-    <value>Serviço não encontrado!</value>
+  <data name="SERVICE_TYPE_BEARD" xml:space="preserve">
+    <value>Barba</value>
   </data>
-  <data name="UNKNOW_ERROR" xml:space="preserve">
-    <value>Erro desconhecido!</value>
+  <data name="SERVICE_TYPE_FEMALE_HAIRCUT" xml:space="preserve">
+    <value>Corte de Cabelo Feminino</value>
   </data>
-  <data name="VALUE_GREATER_THAN_ZERO" xml:space="preserve">
-    <value>O valor deve ser maior que 0!</value>
+  <data name="SERVICE_TYPE_HAIRCUT_AND_BEAR" xml:space="preserve">
+    <value>Corte de Cabelo e Barba</value>
+  </data>
+  <data name="SERVICE_TYPE_MALE_HAIRCUT" xml:space="preserve">
+    <value>Corte de Cabelo Masculino</value>
+  </data>
+  <data name="WEEKLY_REVENUE" xml:space="preserve">
+    <value>Faturamento da Semana</value>
+  </data>
+  <data name="VALUE" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="JOHNS_BARBERSHOP" xml:space="preserve">
+    <value>Barbearia do João</value>
   </data>
 </root>

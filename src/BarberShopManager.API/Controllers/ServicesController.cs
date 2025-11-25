@@ -2,12 +2,14 @@
 using BarberShopManager.Application.UseCases.Services.GetByClient;
 using BarberShopManager.Application.UseCases.Services.GetById;
 using BarberShopManager.Application.UseCases.Services.GetByMonth;
+using BarberShopManager.Application.UseCases.Services.GetByWeek;
 using BarberShopManager.Application.UseCases.Services.Register;
 using BarberShopManager.Application.UseCases.Services.Update;
 using BarberShopManager.Communication.Exceptions;
 using BarberShopManager.Communication.Services.Request;
 using BarberShopManager.Communication.Services.Response;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 
 namespace BarberShopManager.API.Controllers;
 [Route("[controller]")]
@@ -27,7 +29,7 @@ public class ServicesController : ControllerBase
     [HttpGet]
     [Route("{id}")]
     [ProducesResponseType(typeof(ResponseServiceJson), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetById([FromServices] IGetServiceByIdUseCase useCase, [FromRoute] int id)
     {
         var response = await useCase.Execute(id);
@@ -39,9 +41,9 @@ public class ServicesController : ControllerBase
     [Route("client/{clientId}")]
     [ProducesResponseType(typeof(ResponseServicesJson), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public async Task<IActionResult> GetByClientId([FromServices] IGetServicesByClientIdUseCase useCase, [FromRoute] int clientid)
+    public async Task<IActionResult> GetByClientId([FromServices] IGetServicesByClientIdUseCase useCase, [FromRoute] int clientId)
     {
-        var response = await useCase.Execute(clientid);
+        var response = await useCase.Execute(clientId);
 
         if(response.Services.Count == 0)
         {
@@ -54,15 +56,33 @@ public class ServicesController : ControllerBase
     [HttpGet]
     [ProducesResponseType(typeof(ResponseServicesJson), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public async Task<IActionResult> GetByMonth([FromServices] IGetServicesByMonthUseCase useCase, [FromHeader] DateOnly date)
+    public async Task<IActionResult> GetByMonth([FromServices] IGetServicesByMonthUseCase useCase, [FromHeader] DateOnly month)
     {
-        var response = await useCase.Execute(date);
+
+        var response = await useCase.Execute(month);
 
         if(response.Services.Count == 0)
         {
             return NoContent();
         }
 
+
+        return Ok(response);
+    }
+
+
+    [HttpGet("last-week")]
+    [ProducesResponseType(typeof(ResponseServicesJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> GetLastWeek([FromServices] IGetServicesLastWeekUseCase useCase)
+    {
+
+        var response = await useCase.Execute();
+
+        if (response.Services.Count == 0)
+        {
+            return NoContent();
+        }
 
         return Ok(response);
     }

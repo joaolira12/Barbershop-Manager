@@ -4,10 +4,14 @@ using BarberShopManager.Application.UseCases.Clients.GetAll;
 using BarberShopManager.Application.UseCases.Clients.GetById;
 using BarberShopManager.Application.UseCases.Clients.Register;
 using BarberShopManager.Application.UseCases.Clients.Update;
+using BarberShopManager.Application.UseCases.Reports.Excel.GetExcelByMonth;
+using BarberShopManager.Application.UseCases.Reports.Excel.GetExcelLastWeek;
+using BarberShopManager.Application.UseCases.Reports.PDF.GetPdfByWeek;
 using BarberShopManager.Application.UseCases.Services.Delete;
 using BarberShopManager.Application.UseCases.Services.GetByClient;
 using BarberShopManager.Application.UseCases.Services.GetById;
 using BarberShopManager.Application.UseCases.Services.GetByMonth;
+using BarberShopManager.Application.UseCases.Services.GetByWeek;
 using BarberShopManager.Application.UseCases.Services.Register;
 using BarberShopManager.Application.UseCases.Services.Update;
 using Microsoft.Extensions.DependencyInjection;
@@ -34,6 +38,10 @@ public static class DependencyInjectionExtension
         services.AddScoped<IGetServiceByIdUseCase, GetServiceByIdUseCase>();
         services.AddScoped<IGetServicesByClientIdUseCase, GetServicesByClientIdUseCase>();
         services.AddScoped<IGetServicesByMonthUseCase, GetServicesByMonthUseCase>();
+        services.AddScoped<IGetServicesLastWeekUseCase, GetServicesLastWeekUseCase>();
+        services.AddScoped<IGetExcelByMonthUseCase, GetExcelByMonthUseCase>();
+        services.AddScoped<IGetExcelLastWeekUseCase, GetExcelLastWeekUseCase>();
+        services.AddScoped<IGetPdfByWeekUseCase, GetPdfByWeekUseCase>();
     }
 
     private static void AddAutoMapper(IServiceCollection services)

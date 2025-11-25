@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberShopManager.Infrastructure", "src\BarberShopManager.Infrastructure\BarberShopManager.Infrastructure.csproj", "{CFB6D811-97AF-4A38-9728-F6332147B183}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{6A130721-A17C-48C6-925F-E77051F13DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{BD21C4AD-2975-491A-AD71-B30765B4B1D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{CFB6D811-97AF-4A38-9728-F6332147B183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFB6D811-97AF-4A38-9728-F6332147B183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFB6D811-97AF-4A38-9728-F6332147B183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A130721-A17C-48C6-925F-E77051F13DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A130721-A17C-48C6-925F-E77051F13DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A130721-A17C-48C6-925F-E77051F13DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A130721-A17C-48C6-925F-E77051F13DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD21C4AD-2975-491A-AD71-B30765B4B1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD21C4AD-2975-491A-AD71-B30765B4B1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD21C4AD-2975-491A-AD71-B30765B4B1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD21C4AD-2975-491A-AD71-B30765B4B1D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,8 @@ Global
 		{FDDD6BB2-C477-4596-B614-4BD5FC15615C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{6D202CB1-8534-48AA-88AA-3348BF8C44F2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{CFB6D811-97AF-4A38-9728-F6332147B183} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6A130721-A17C-48C6-925F-E77051F13DB1} = {621BA4FA-8DE3-441F-BDCE-A9D6AE1B646D}
+		{BD21C4AD-2975-491A-AD71-B30765B4B1D9} = {621BA4FA-8DE3-441F-BDCE-A9D6AE1B646D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DEA5E2D-3149-4C2B-AE25-A83C776E21AD}

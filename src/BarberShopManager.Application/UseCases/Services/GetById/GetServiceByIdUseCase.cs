@@ -20,11 +20,11 @@ public class GetServiceByIdUseCase : IGetServiceByIdUseCase
     {
         var response = await _repository.GetServiceById(id);
 
-        if(response is null)
+        if(response == null)
         {
             throw new NotFoundServiceException(ResourceErrorMessages.SERVICE_NOT_FOUND);
         }
 
-        return _mapper.Map<ResponseServiceJson>(response);
+        return new ResponseServiceJson(response.Id, (Communication.Services.Enums.ServiceType)response.ServiceType, response.Value, response.Date, response.Observation);
     }
 }

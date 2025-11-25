@@ -127,7 +127,7 @@
     <value>Invalid telephone number!</value>
   </data>
   <data name="NAME_REQUIRED" xml:space="preserve">
-    <value>Full name required!</value>
+    <value>Name required!</value>
   </data>
   <data name="SERVICE_CANNOT_FUTURE" xml:space="preserve">
     <value>The service cannot be in the future!</value>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BarberShopManager.Exceptions.Resources {
+namespace BarberShopManager.Domain.Reports.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace BarberShopManager.Exceptions.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourceErrorMessages {
+    public class ResourceReportMessages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourceErrorMessages() {
+        internal ResourceReportMessages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace BarberShopManager.Exceptions.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BarberShopManager.Exceptions.Resources.ResourceErrorMessages", typeof(ResourceErrorMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BarberShopManager.Domain.Reports.Resources.ResourceReportMessages", typeof(ResourceReportMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,74 +61,110 @@ namespace BarberShopManager.Exceptions.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Client not found!.
+        ///   Looks up a localized string similar to Client.
         /// </summary>
-        public static string CLIENT_NOT_FOUND {
+        public static string CLIENT {
             get {
-                return ResourceManager.GetString("CLIENT_NOT_FOUND", resourceCulture);
+                return ResourceManager.GetString("CLIENT", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Service type invalid.
+        ///   Looks up a localized string similar to Date.
         /// </summary>
-        public static string INVALID_SERVICE_TYPE {
+        public static string DATE {
             get {
-                return ResourceManager.GetString("INVALID_SERVICE_TYPE", resourceCulture);
+                return ResourceManager.GetString("DATE", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid telephone number!.
+        ///   Looks up a localized string similar to John&apos;s BarberShop.
         /// </summary>
-        public static string INVALID_TELEPHONE_NUMBER {
+        public static string JOHNS_BARBERSHOP {
             get {
-                return ResourceManager.GetString("INVALID_TELEPHONE_NUMBER", resourceCulture);
+                return ResourceManager.GetString("JOHNS_BARBERSHOP", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name required!.
+        ///   Looks up a localized string similar to Observation.
         /// </summary>
-        public static string NAME_REQUIRED {
+        public static string OBSERVATION {
             get {
-                return ResourceManager.GetString("NAME_REQUIRED", resourceCulture);
+                return ResourceManager.GetString("OBSERVATION", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The service cannot be in the future!.
+        ///   Looks up a localized string similar to Service.
         /// </summary>
-        public static string SERVICE_CANNOT_FUTURE {
+        public static string SERVICE {
             get {
-                return ResourceManager.GetString("SERVICE_CANNOT_FUTURE", resourceCulture);
+                return ResourceManager.GetString("SERVICE", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Service not found!.
+        ///   Looks up a localized string similar to Beard.
         /// </summary>
-        public static string SERVICE_NOT_FOUND {
+        public static string SERVICE_TYPE_BEARD {
             get {
-                return ResourceManager.GetString("SERVICE_NOT_FOUND", resourceCulture);
+                return ResourceManager.GetString("SERVICE_TYPE_BEARD", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unknow error!.
+        ///   Looks up a localized string similar to Female Haircut.
         /// </summary>
-        public static string UNKNOW_ERROR {
+        public static string SERVICE_TYPE_FEMALE_HAIRCUT {
             get {
-                return ResourceManager.GetString("UNKNOW_ERROR", resourceCulture);
+                return ResourceManager.GetString("SERVICE_TYPE_FEMALE_HAIRCUT", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The value must be greater than 0!.
+        ///   Looks up a localized string similar to Haircut and Beard.
         /// </summary>
-        public static string VALUE_GREATER_THAN_ZERO {
+        public static string SERVICE_TYPE_HAIRCUT_AND_BEAR {
             get {
-                return ResourceManager.GetString("VALUE_GREATER_THAN_ZERO", resourceCulture);
+                return ResourceManager.GetString("SERVICE_TYPE_HAIRCUT_AND_BEAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Male Haircut.
+        /// </summary>
+        public static string SERVICE_TYPE_MALE_HAIRCUT {
+            get {
+                return ResourceManager.GetString("SERVICE_TYPE_MALE_HAIRCUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services from.
+        /// </summary>
+        public static string SERVICES_FROM {
+            get {
+                return ResourceManager.GetString("SERVICES_FROM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string VALUE {
+            get {
+                return ResourceManager.GetString("VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weekly Revenue.
+        /// </summary>
+        public static string WEEKLY_REVENUE {
+            get {
+                return ResourceManager.GetString("WEEKLY_REVENUE", resourceCulture);
             }
         }
     }
