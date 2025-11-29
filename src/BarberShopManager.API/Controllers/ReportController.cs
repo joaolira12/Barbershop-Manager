@@ -46,9 +46,6 @@ public class ReportController : ControllerBase
     {
         byte[] file = await useCase.Execute();
 
-        Response.Headers["Content-Disposition"] = "attachment; filename=report.pdf";
-        Response.Headers.Remove("Content-Type");
-
         if (file.Length > 0)
             return File(file, MediaTypeNames.Application.Pdf, "report.pdf");
 
