@@ -1,4 +1,5 @@
 using BarberShopManager.API.Filters;
+using BarberShopManager.API.Middleware;
 using BarberShopManager.Application;
 using BarberShopManager.Infrastructure;
 
@@ -25,6 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<CultureMiddleware>();
 
 app.UseHttpsRedirection();
 
