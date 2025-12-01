@@ -21,7 +21,7 @@ public class RegisterServiceUseCase : IRegisterServiceUseCase
         _mapper = mapper;
     }
 
-    public async Task<ResponseShortServiceJson> Execute(RequestServiceJson request)
+    public async Task<ResponseRegisteredServiceJson> Execute(RequestServiceJson request)
     {
         Validate(request);
 
@@ -31,7 +31,7 @@ public class RegisterServiceUseCase : IRegisterServiceUseCase
         await _repository.CreateService(service);
         await _unitOfWork.Commit();
 
-        return _mapper.Map<ResponseShortServiceJson>(service);
+        return _mapper.Map<ResponseRegisteredServiceJson>(service);
 
     }
 

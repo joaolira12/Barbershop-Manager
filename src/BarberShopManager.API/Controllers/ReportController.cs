@@ -45,7 +45,7 @@ public class ReportController : ControllerBase
     public async Task<ActionResult> GetPDF([FromServices] IGetPdfByWeekUseCase useCase)
     {
         byte[] file = await useCase.Execute();
-
+        
         if (file.Length > 0)
             return File(file, MediaTypeNames.Application.Pdf, "report.pdf");
 

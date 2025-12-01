@@ -21,7 +21,7 @@ public class RegisterClientUseCase : IRegisterClientUseCase
         _mapper = mapper;
     }
 
-    public async Task<ResponseShortClientJson> Execute(RequestClientJson request)
+    public async Task<ResponseRegisteredClientJson> Execute(RequestClientJson request)
     {
         Validate(request);
 
@@ -30,7 +30,7 @@ public class RegisterClientUseCase : IRegisterClientUseCase
         await _repository.CreateClient(client);
         await _unitOfWork.Commit();
 
-        return _mapper.Map<ResponseShortClientJson>(request); ;
+        return _mapper.Map<ResponseRegisteredClientJson>(request);
     }
 
     private void Validate(RequestClientJson request)

@@ -4,5 +4,5 @@ using BarberShopManager.Communication.Clients.Response;
 namespace BarberShopManager.Application.UseCases.Clients.Register;
 public interface IRegisterClientUseCase
 {
-    public Task<ResponseShortClientJson> Execute(RequestClientJson request);
+    public Task<ResponseRegisteredClientJson> Execute(RequestClientJson request);
 }

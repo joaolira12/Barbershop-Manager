@@ -20,11 +20,13 @@ public class AutoMapping : Profile
     {
         CreateMap<RequestClientJson, Client>();
         CreateMap<RequestClientJson, ResponseShortClientJson>();
+        CreateMap<RequestClientJson, ResponseRegisteredClientJson>();
     }
 
     private void EntityToResponse()
     {
         CreateMap<Client, ResponseShortClientJson>();
+        CreateMap<Client, ResponseRegisteredClientJson>();
         CreateMap<Client, ResponseClientJson>();
     }
 
@@ -32,11 +34,13 @@ public class AutoMapping : Profile
     {
         CreateMap<RequestServiceJson, Service>();
         CreateMap<RequestServiceJson, ResponseShortServiceJson>();
+        CreateMap<RequestServiceJson, ResponseRegisteredServiceJson>();
     }
 
     private void EntityToService()
     {
         CreateMap<Service, ResponseShortServiceJson>();
+        CreateMap<Service, ResponseRegisteredServiceJson>();
         CreateMap<Service, ResponseServiceJson>();
     }
 }

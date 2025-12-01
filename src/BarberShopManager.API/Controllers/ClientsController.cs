@@ -15,7 +15,7 @@ namespace BarberShopManager.API.Controllers;
 public class ClientsController : ControllerBase
 {
     [HttpPost]
-    [ProducesResponseType(typeof(ResponseShortClientJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseRegisteredClientJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Create([FromServices] IRegisterClientUseCase useCase, [FromBody] RequestClientJson request)
     {

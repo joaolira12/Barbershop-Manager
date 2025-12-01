@@ -17,13 +17,13 @@ namespace BarberShopManager.API.Controllers;
 public class ServicesController : ControllerBase
 {
     [HttpPost]
-    [ProducesResponseType(typeof(ResponseShortServiceJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseRegisteredServiceJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Create([FromServices] IRegisterServiceUseCase useCase, [FromBody] RequestServiceJson request)
     {
-        var result = await useCase.Execute(request);
+        var response = await useCase.Execute(request);
 
-        return Created(string.Empty, result);
+        return Created(string.Empty, response);
     }
 
     [HttpGet]
