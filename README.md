@@ -42,6 +42,7 @@ Ela engloba desde o cadastro de clientes e serviços até geração de relatóri
 - **Mapeamento com AutoMapper**
 - **Filtro exceção**
 - **Middleware para Idiomas**
+- **Localização de mensagens com arquivo Resource**
 - **Geração de Relatórios**
 - **PDF com MigraDoc**
 - **Excel com ClosedXML**
