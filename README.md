@@ -1,7 +1,7 @@
 # 💈 BarberShopManager — API
 
 A BarberShopManager API é uma aplicação construída em .NET Core, seguindo padrões modernos de arquitetura e boas práticas para garantir escalabilidade, organização e facilidade na manutenção.
-Ela engloba desde o cadastro de clientes e serviços até geração de relatórios (PDF/Excel) e validações
+Ela engloba desde o cadastro de clientes e serviços até geração de relatórios (PDF/Excel) e validações.
 
 ![Imagem BarberShopManager](images/imagem-barbershop2.png)
 
