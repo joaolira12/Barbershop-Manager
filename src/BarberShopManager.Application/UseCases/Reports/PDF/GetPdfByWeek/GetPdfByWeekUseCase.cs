@@ -161,7 +161,7 @@ public class GetPdfByWeekUseCase : IGetPdfByWeekUseCase
 
 
 
-        if(service.Observation != null)
+        if(string.IsNullOrWhiteSpace(service.Observation) == false)
         {
             var observationRow = serviceTable.AddRow();
             observationRow.Height = ROW_HEIGHT;
